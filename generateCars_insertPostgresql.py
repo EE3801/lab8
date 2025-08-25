@@ -97,21 +97,15 @@ def insertPostgresql():
     cur=conn.cursor()
 
     # insert multiple records in a single statement
-    # data = []
     query = 'INSERT INTO public."CarPark"("Plate", "LocationID", "Entry_DateTime", "Exit_DateTime", "Parking_Charges") VALUES (%s, %s, %s, %s, %s)'
-    # for index, item in df.iterrows():
-    #     if index > 0:
-    #         data.append(tuple(item))
-    # data_for_db = tuple(data)
-    # cur.mogrify(query,data_for_db[0])
     # execute the query
     cur.executemany(query,data_for_db)
 
     # make it permanent by committing the transaction
     conn.commit()
 
+    ## you can uncomment to check the data generated
     # df=pd.read_sql('select * from public."CarPark"',conn)
-
     # df.to_csv('/opt/airflow/dags/data/carpark_system.csv')
 
     print("-------Data Saved------")
