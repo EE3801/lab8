@@ -61,7 +61,7 @@ You can follow the instructions (section 1.1) below to install the softwares for
 3. Now you can skip to section 2.
 
 
-# 1.1 Install docker and configure AWS EC2 
+# 1.1 Install docker and configure AWS EC2 (optional)
 
 1. Open a command line or terminal, create AWS EC2 instance with 60GB storage space and 16 GB RAM. 
 
@@ -123,7 +123,7 @@ You can follow the instructions (section 1.1) below to install the softwares for
 
     ```$ docker-compose --version```
 
-# 1.2 Install Airflow and postgresql
+# 1.2 Install Airflow and postgresql (optional)
 
 1. In the local machine command line or terminal, go to the working directory and SSH into server. 
 
@@ -207,7 +207,7 @@ You can follow the instructions (section 1.1) below to install the softwares for
 
 
 
-# 1.3 Install pgadmin4
+# 1.3 Install pgadmin4 (optional)
 
 1. Install pgadmin4. 
 
@@ -245,7 +245,7 @@ You can follow the instructions (section 1.1) below to install the softwares for
     <img src="image/week8_image11.png" width="20%">
 
 
-# 1.4 Install elasticsearch and kibana
+# 1.4 Install elasticsearch and kibana (optional)
 
 1. In the server, create directory ```elasticsearch``` and go to directory.
 
@@ -299,9 +299,6 @@ You can follow the instructions (section 1.1) below to install the softwares for
 
 
     <img src="image/week8_image14.png" width="50%">
-
-
-
 
 
 
