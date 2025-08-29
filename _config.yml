@@ -1,3 +1,18 @@
 title: Lab 8
 remote_theme: just-the-docs/just-the-docs
 
+nav_external_links:
+  - title: 1. Installing Softwares or Import softwares
+    url: lab8%20batch_data_pipeline.html#1-installing-softwares-or-import-softwares
+  - title: 2. Scenario: Carpark system (daily reporting)
+    url: lab8%20batch_data_pipeline.html#2-scenario-carpark-system-daily-reporting
+  - title: Conclusion
+    url: lab8%20batch_data_pipeline.html#conclusion
+  - title: Submissions next Wed 9pm (8 Oct 2025)
+    url: lab8%20batch_data_pipeline.html#submissions-next-wed-9pm-15-oct-2025
+
+just_the_docs:
+  custom_css:
+    - assets/css/style.scss
+    - assets/js/fix-links.js
+
