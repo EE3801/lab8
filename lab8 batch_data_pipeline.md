@@ -22,7 +22,13 @@ date_format = "%d/%m/%Y %H:%M:%S"
 
 # 1. Installing Softwares or Import softwares
 
-You can follow the instructions (section 1.1) below to install the softwares for lab8 or import (section 1.0) the Amazon Machine Images (AMIs) into your EC2 instance. If you would like to import the AMI, ensure your region is set to "ap-southeast-1" and send your AWS account ID to gmscher@nus.edu.sg for access.
+You can follow the instructions 
+
+- (section 1.0) to import all the softwares from the Amazon Machine Images (AMIs) into your EC2 instance
+OR
+- (optional: section 1.1 to 1.4) to install the softwares for lab8 
+
+Do ensure your region is set to "ap-southeast-1" and send your AWS account ID to gmscher@nus.edu.sg for access.
 
 # 1.0 Import Amazon Machine Images (AMIs) into your EC2 instance.
 
