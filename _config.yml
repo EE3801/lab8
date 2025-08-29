@@ -4,7 +4,7 @@ remote_theme: just-the-docs/just-the-docs
 nav_external_links:
   - title: 1. Installing Softwares or Import softwares
     url: lab8%20batch_data_pipeline.html#1-installing-softwares-or-import-softwares
-  - title: 2. Scenario: Carpark system (daily reporting)
+  - title: 2. Scenario Carpark system (daily reporting)
     url: lab8%20batch_data_pipeline.html#2-scenario-carpark-system-daily-reporting
   - title: Conclusion
     url: lab8%20batch_data_pipeline.html#conclusion
