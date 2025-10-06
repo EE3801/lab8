@@ -2,13 +2,13 @@ import datetime as dt
 from datetime import timedelta
 from airflow import DAG
 # from airflow.operators.bash_operator import BashOperator
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 import pandas as pd
 
 import json
 from datetime import datetime, timedelta, time
 import random
-import psycopg as db
+import psycopg2 as db
 
 date_format = "%d/%m/%Y %H:%M:%S"
 
@@ -91,7 +91,7 @@ def insertPostgresql():
 
 
     # replace localhost with host.docker.internal
-    conn_string="dbname='carpark_system' host='ec2-47-129-189-190.ap-southeast-1.compute.amazonaws.com' user='airflow' password='airflow'"
+    conn_string="dbname='carpark_system' host='ec2-54-169-173-167.ap-southeast-1.compute.amazonaws.com' user='airflow' password='airflow'"
 
     conn=db.connect(conn_string)
     cur=conn.cursor()
@@ -120,7 +120,7 @@ default_args = {
 
 with DAG('carpark_system_generate_cars_DBdag',
          default_args=default_args,
-         schedule_interval=timedelta(minutes=5),      
+         schedule=timedelta(minutes=5),      
                            # '0 * * * *',
          ) as dag:
 

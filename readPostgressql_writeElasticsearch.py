@@ -2,15 +2,15 @@ import datetime as dt
 from datetime import timedelta
 from airflow import DAG
 # from airflow.operators.bash_operator import BashOperator
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 import pandas as pd
-import psycopg as db
+import psycopg2 as db
 from elasticsearch import Elasticsearch
 
 def queryPostgresql():
 
     # replace localhost with host.docker.internal
-    conn_string="dbname='carpark_system' host='ec2-47-129-189-190.ap-southeast-1.compute.amazonaws.com' user='airflow' password='airflow'"
+    conn_string="dbname='carpark_system' host='ec2-54-169-173-167.ap-southeast-1.compute.amazonaws.com' user='airflow' password='airflow'"
 
     conn=db.connect(conn_string)
 
@@ -23,7 +23,7 @@ def queryPostgresql():
 def insertElasticsearch():
 
     # replace localhost with host.docker.internal
-    es = Elasticsearch({'https://ec2-47-129-189-190.ap-southeast-1.compute.amazonaws.com:9200'}, basic_auth=("elastic", "L_P5_ympxlk0IUZ3AH3C"), verify_certs=False) 
+    es = Elasticsearch({'https://ec2-47-129-189-190.ap-southeast-1.compute.amazonaws.com:9200'}, basic_auth=("elastic", "6+6TvrvyeH+1w1tsk-jJ"), verify_certs=False) 
 
     df=pd.read_csv('/opt/airflow/dags/data/carpark_system.csv')
 
@@ -44,7 +44,7 @@ default_args = {
 
 with DAG('carpark_system_readfrompostgresql_toelasticsearch_DBdag',
          default_args=default_args,
-         schedule_interval=timedelta(minutes=5),      
+         schedule=timedelta(minutes=5),      
                            # '0 * * * *',
          ) as dag:
 
