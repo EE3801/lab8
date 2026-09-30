@@ -6,6 +6,8 @@
 
 Create a new Jupyter notebook file named `batch_data_pipeline.ipynb`.
 
+Note: When copying the codes to your notebook, select all and ```Shift+Tab``` to remove leading spaces.
+
 ```python
 # Import Libraries
 
