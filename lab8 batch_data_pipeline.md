@@ -507,9 +507,9 @@ conn.commit()
 
     <img src="image/week8_image17.png" width="50%">
 
-    Perform the steps above for readPostgressql_writeElasticsearch.py.
+5. Perform the steps above for readPostgressql_writeElasticsearch.py.
 
-5. If the readPostgressql_writeElasticsearch.py and generateCars_insertPostgresql.py dag is successful you should see the index in kibana <a href="http://<ip_address>:5601/">```http://localhost:5601/```</a>. On the browser in kibana, search for Index Management and you will see the index ```frompostgresql```. 
+6. If the readPostgressql_writeElasticsearch.py and generateCars_insertPostgresql.py dag is successful you should see the index in kibana <a href="http://<ip_address>:5601/">```http://localhost:5601/```</a>. On the browser in kibana, search for Index Management and you will see the index ```frompostgresql```. 
 
     ```bash
     # On EC2 instance terminal, ensure kibana is started
@@ -530,10 +530,6 @@ conn.commit()
     - If it is still not showing, ensure elasticsearch is up and running.
 
         <img src="image/week8_image18.png" width="80%">
-
-6. In the browser accessing ariflow, remember to turn off the batch processes by deactivating the dags.
-
-    <img src="image/week8_image19.png" width="80%">
 
 7. In the browser accessing kibana ```http://<ip_address>:5601```, search for `Data View` and explore the data. 
 
@@ -556,6 +552,9 @@ conn.commit()
     <!-- <img src="image/week8_image26.png" width="80%"> -->
     <!-- <img src="image/week8_image27.png" width="80%"> -->
 
+9. In the browser accessing ariflow, remember to turn off the batch processes by deactivating the dags.
+
+    <img src="image/week8_image19.png" width="80%">
 
 # Conclusion
 
