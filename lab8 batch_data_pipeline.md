@@ -393,6 +393,10 @@ df.head()
 len(df)
 ```
 
+On the ec2 instance, start all docker container.
+```bash
+docker start $(docker ps -q -a)
+```
 
 ```python
 # Create database connection
