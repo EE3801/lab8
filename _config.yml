@@ -13,7 +13,7 @@ nav_external_links:
   - title: 2.2 Prepare data
     url: lab8%20batch_data_pipeline.html#22-prepare-data
   - title: 2.3 Insert, Select, Delete data in postgresql
-    url: lab8%20batch_data_pipeline.html#23-insert-select-delete-data-in-postgresql
+    url: lab8%20batch_data_pipeline.html#23-insert-select-and-delete-data-in-postgresql
   - title: 2.4 Generate car entry and exit every 5 minutes
     url: lab8%20batch_data_pipeline.html#24-generate-car-entry-and-exit-every-5-minutes
   - title: Conclusion
