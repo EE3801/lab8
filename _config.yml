@@ -5,7 +5,7 @@ nav_external_links:
   - title: 1. Installing Softwares or Import softwares
     url: lab8%20batch_data_pipeline.html#1-installing-softwares-or-import-softwares
   - title: 1.0 Import Amazon Machine Images (AMIs) into your EC2 instance
-    url: lab8%20batch_data_pipeline.html#10-import-amazon-machine-images-amis-into-your-ec2-instance
+    url: lab8%20batch_data_pipeline.html#1-installing-software-or-importing-software
   - title: 2. Scenario Carpark system (daily reporting)
     url: lab8%20batch_data_pipeline.html#2-scenario-carpark-system-daily-reporting
   - title: 2.1 import libraries
