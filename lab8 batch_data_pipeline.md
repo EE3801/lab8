@@ -509,7 +509,7 @@ conn.commit()
 
     Perform the steps above for readPostgressql_writeElasticsearch.py.
 
-5. If the readPostgressql_writeElasticsearch.py and generateCars_insertPostgresql.py dag is successful you should see the index in kibana <a href="http://<ip_address>:5601/">http://localhost:5601/</a>. On the browser in kibana, search for Index Management and you will see the index below. 
+5. If the readPostgressql_writeElasticsearch.py and generateCars_insertPostgresql.py dag is successful you should see the index in kibana <a href="http://<ip_address>:5601/">```http://localhost:5601/```</a>. On the browser in kibana, search for Index Management and you will see the index below. 
 
     ```bash
     # On EC2 instance terminal, ensure kibana is started
