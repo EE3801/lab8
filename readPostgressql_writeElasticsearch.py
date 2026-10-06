@@ -10,7 +10,7 @@ from elasticsearch import Elasticsearch
 def queryPostgresql():
 
     # replace localhost with host.docker.internal
-    conn_string="dbname='carpark_system' host='ec2-54-169-173-167.ap-southeast-1.compute.amazonaws.com' user='airflow' password='airflow'"
+    conn_string="dbname='carpark_system' host='<ec2_ip_address>' user='airflow' password='******'"
 
     conn=db.connect(conn_string)
 
@@ -23,7 +23,7 @@ def queryPostgresql():
 def insertElasticsearch():
 
     # replace localhost with host.docker.internal
-    es = Elasticsearch({'https://ec2-47-129-189-190.ap-southeast-1.compute.amazonaws.com:9200'}, basic_auth=("elastic", "6+6TvrvyeH+1w1tsk-jJ"), verify_certs=False) 
+    es = Elasticsearch({'https://<ec2_ip_address>:9200'}, basic_auth=("elastic", "*******"), verify_certs=False) 
 
     df=pd.read_csv('/opt/airflow/dags/data/carpark_system.csv')
 

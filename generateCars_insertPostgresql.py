@@ -66,7 +66,7 @@ def createCarEntry():
     charged = duration.seconds/60/60/2 * 60/100
     car = CarPark(
         Plate= fake.license_plate(),
-        LocationID="Park"+str(random.randint(0, 5)),
+        LocationID="Park"+str(random.randint(1, 5)),
         Entry_DateTime=entry_time.strftime(date_format),
         Exit_DateTime=now.strftime(date_format),
         Parking_Charges=charged
@@ -91,7 +91,7 @@ def insertPostgresql():
 
 
     # replace localhost with host.docker.internal
-    conn_string="dbname='carpark_system' host='ec2-54-169-173-167.ap-southeast-1.compute.amazonaws.com' user='airflow' password='airflow'"
+    conn_string="dbname='carpark_system' host='<ec2_ip_address>' user='airflow' password='*******'"
 
     conn=db.connect(conn_string)
     cur=conn.cursor()

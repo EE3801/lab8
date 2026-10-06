@@ -464,10 +464,10 @@ conn.commit()
 
 1. On the local machine, download the <a href="./generateCars_insertPostgresql.py">generateCars_insertPostgresql.py</a> and <a href="./readPostgressql_writeElasticsearch.py">readPostgressql_writeElasticsearch.py</a>. 
 
-    - On the local machine, copy the two python files into directory `./dev_airflow/dags`
+    - On the local machine, move the two python files into directory `./dev_airflow/dags`
         ```bash
         # for MacOS and Windows 
-        cp ~/Downloads/*.py ~/Documents/projects/ee3801/dev_airflow/dags
+        mv ~/Downloads/*.py ~/Documents/projects/ee3801/dev_airflow/dags
         ```
 
     - On the local machine Visual Studio Code, edit the ```<ec2_ip_address>```, airflow password, elasticsearch password and save the file.
