@@ -77,7 +77,7 @@ def createCarEntry():
 
 def insertPostgresql():
 
-    # Generate more cars, append to list and save csv
+    # Generate 10 cars, append to list and save csv
     carpark_system = []
     for i in range(10):
         thiscar_dict = eval(createCarEntry())
