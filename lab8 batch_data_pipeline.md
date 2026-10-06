@@ -82,7 +82,7 @@ Notes:
     ```
 
 5. Verify if airflow is accessible. 
-    - In a browser, open Airflow at http://<ip_address>:8080.
+    - In a browser, open Airflow at ```http://<ip_address>:8080```.
 
         Login user: airflow
         Password: *******
@@ -95,12 +95,12 @@ Notes:
         docker start dev_pgadmin4
         ```
 
-    - In a browser, go to http://<ip_address>.
+    - In a browser, go to ```http://<ip_address>```.
 
     - In pgAdmin, `Cancel` and right click, choose `Properties` of database server and paste the correct <ip_address> of your EC2 instance (required whenever restart EC2 instance):
 
         - Name: `dev_airflow-postgres-1`
-        - Host: `<ip_address>`
+        - Host: ```<ip_address>```
         - Database: `postgres`
         - Username: `airflow`
         - Password: `*******`
@@ -155,7 +155,7 @@ Notes:
         docker start dev_kib01
         ```
 
-    - In a browser, go to `http://<ip_address>:5601.
+    - In a browser, go to ```http://<ip_address>:5601```.
 
         Copy the emrollment token and paste it into Kibana in your browser.
         Log in with username `elastic` and the password you saved earlier.
@@ -466,7 +466,7 @@ conn.commit()
         cp ~/Downloads/*.py ~/Documents/projects/ee3801/dev_airflow/dags
         ```
 
-    - On the local machine Visual Studio Code, edit the <ec2_ip_address>, airflow password, elasticsearch password and save the file.
+    - On the local machine Visual Studio Code, edit the ```<ec2_ip_address>```, airflow password, elasticsearch password and save the file.
     
     - On the local machine, copy the files to EC2 instance ~/dev_airflow/dags/ using the command:
 
@@ -529,7 +529,7 @@ conn.commit()
 
     <img src="image/week8_image19.png" width="80%">
 
-7. In the browser accessing kibana http://<ip_address>:5601, search for `Data View` and explore the data. 
+7. In the browser accessing kibana ```http://<ip_address>:5601```, search for `Data View` and explore the data. 
 
     <img src="image/week8_image20.png" width="80%">
     <img src="image/week8_image21.png" width="80%">
