@@ -491,7 +491,7 @@ conn.commit()
         docker start dev_es01
         ```
 
-2. On the browser in airflow, go to <a href="http://<ip_address>:8080">http://<ip_address>:8080</a>. Login user: airflow, password: *******.
+2. On the browser in airflow, go to <a href="http://<ip_address>:8080">```http://<ip_address>:8080```</a>. Login user: airflow, password: *******.
 
 3. On the browser in airflow, in the `DAGS` tab search for `carpark`.
     - Activate the `carpark_system_readfrompostgresql_toelasticsearch_DBdag` dag and trigger to run every 5 minutes.
@@ -506,6 +506,8 @@ conn.commit()
 4. On the browser in airflow, select `Options` dropdown box and set `Number of Dag Runs` to 5 runs. Activate the Dag, click on the icon next to the dags' name. You should see the 5 runs and tasks in dark green. Click on the graph and task then view the logs in the Logs.
 
     <img src="image/week8_image17.png" width="50%">
+
+    Perform the steps above for readPostgressql_writeElasticsearch.py.
 
 5. If the readPostgressql_writeElasticsearch.py and generateCars_insertPostgresql.py dag is successful you should see the index in kibana <a href="http://<ip_address>:5601/">http://localhost:5601/</a>. On the browser in kibana, search for Index Management and you will see the index below. 
 
